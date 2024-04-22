@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: lambda_2
+
+Resources:
+  ContainerLambda:
+    Type: 'AWS::Lambda::Function'
+    Properties:
+      Description: 'lambda_2'
+      FunctionName: lambda_2
+      PackageType: Image
+      Code:
+        ImageUri: !Sub '123456789012.dkr.ecr.us-east-1.amazonaws.com/automation_jobs/service_1:latest'
+      ImageConfig:
+         Command: ["code2.handler"]
+      Timeout: 840
+      MemorySize: 384
+      Role: "arn:aws:iam::123456789012:role/<your_role>"
+
+Outputs:
+  ContainerLambdaARN:
+    Description: ARN of the Container Lambda Function
+    Value: !GetAtt ContainerLambda.Arn
