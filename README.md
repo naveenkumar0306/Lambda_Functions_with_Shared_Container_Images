@@ -3,4 +3,4 @@ The objective is to deploy a set of Lambdas utilizing a single container image d
 
 More info can be found in this article
 
-[https://medium.com/@ksnaveen.elur/optimizing-lambda-deployment-consolidating-functions-with-shared-container-images-697b626e3585](Optimizing Lambda Deployment: Consolidating Functions with Shared Container Images)
+[Optimizing Lambda Deployment: Consolidating Functions with Shared Container Images](https://medium.com/@ksnaveen.elur/optimizing-lambda-deployment-consolidating-functions-with-shared-container-images-697b626e3585)
